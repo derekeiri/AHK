@@ -11,7 +11,7 @@ sendinput {Right} ; sends keystroke
 WinActivate, ahk_id %orig% ; identifies the active window as "orig"
 exit
 
-Left:: ; hotkey label
+Left::
 orig := WinExist("A")
 WinGet, outvar, List , ahk_class SUMATRA_PDF_FRAME
 win1 := outvar1
